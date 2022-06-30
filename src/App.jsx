@@ -10,14 +10,12 @@ function App() {
       <div className="container">
         {FlowersData.map((values) => {
           return (
-            <>
-              <Flowers
-                title={values.title}
-                imgsrc={values.imgsrc}
-                desc={values.desc}
-                btn={values.btn}
-              />
-            </>
+            <Flowers
+              title={values.title}
+              imgsrc={values.imgsrc}
+              desc={values.desc}
+              btn={values.btn}
+            />
           );
         })}
       </div>
